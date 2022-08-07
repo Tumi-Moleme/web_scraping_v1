@@ -5,6 +5,7 @@ from importlib.resources import contents
 import smtplib
 import requests
 from bs4 import  BeautifulSoup
+from userDetails import email, my_pass 
 
 now = datetime.datetime.now()
 
@@ -31,9 +32,9 @@ content += ('<br><br>End Of Message')
 print('Composing Email...')
 SERVER =  'smtp.gmail.com'
 PORT = 587
-FROM = '' 
-TO = ''
-PASS = ''
+FROM = email 
+TO = email
+PASS = my_pass
 
 msg = MIMEMultipart()
 msg['Subject'] = 'Top News Stories HN [Automated E-mail]' + ' '+ str(now.day) + '-'+str(now.month) + str(now.year)
