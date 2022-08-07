@@ -35,9 +35,6 @@ PORT = 587
 FROM = email 
 TO = email
 PASS = my_pass
-FROM = '' 
-TO = ''
-PASS = ''
 
 msg = MIMEMultipart()
 msg['Subject'] = 'Top News Stories HN [Automated E-mail]' + ' '+ str(now.day) + '-'+str(now.month) + str(now.year)
