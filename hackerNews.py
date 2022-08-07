@@ -7,8 +7,8 @@ import requests
 from bs4 import  BeautifulSoup
 from userDetails import email, my_pass 
 
-now = datetime.datetime.now()
-
+now = datetime.now()
+h = 'eddited'
 content = ''
 
 def extracting_news(url):
